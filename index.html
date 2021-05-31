@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="top">
+      <nav class="top-nav">
+        <a href="#main-content" class="skip-cta">skip to main content</a>
+        <div class="const-nav">
+          <a href="#">company name</a>
+          <button
+            class="nav-btn"
+            aria-controls="secondary-nav"
+            aria-haspopup="true"
+          >
+            menu
+          </button>
+        </div>
+        <div class="toggled-nav">
+          <ul
+            id="secondary-nav"
+            class="clean-list secondary"
+            aria-expanded="false"
+            hidden
+          >
+            <li><a href="#">about</a></li>
+            <li><a href="#">services</a></li>
+            <li><a href="#">locations</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">facebook</a></li>
+            <li><a href="#">twitter</a></li>
+            <li><a href="#">github</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav class="bottom-nav">
+        <ul class="clean-list primary">
+          <li>
+            <a href="#">
+              <figure>
+                <img src="https://via.placeholder.com/50" alt="" />
+                <figcaption>options</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="#services">
+              <figure>
+                <img src="https://via.placeholder.com/50" alt="" />
+                <figcaption>services</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="#contact">
+              <figure>
+                <img src="https://via.placeholder.com/50" alt="" />
+                <figcaption>contact</figcaption>
+              </figure>
+            </a>
+          </li>
+        </ul>
+        <ul class="clean-list primary-toggled">
+          <li>
+            <a href="#top">
+              <figure>
+                <img src="https://via.placeholder.com/50" alt="" />
+                <figcaption>top</figcaption>
+              </figure>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <section class="hero">
+        <div class="content-container">
+          <h1>value proposition</h1>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <div class="feature-section">
+            <p>featured services</p>
+            <ul class="clean-list">
+              <li><a href="#">service one</a></li>
+              <li><a href="#">service two</a></li>
+              <li><a href="#">service three</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section id="services">
+        <div class="content-container">
+          <h2>services</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+            libero nostrum eum molestiae minus vel amet, ea culpa mollitia ipsa
+            nihil dolore alias sapiente tempore.
+          </p>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="content-container">
+          <h2>contact</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+            libero nostrum eum molestiae minus vel amet, ea culpa mollitia ipsa
+            nihil dolore alias sapiente tempore.
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
