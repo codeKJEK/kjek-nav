@@ -65,7 +65,7 @@ figure {
 }
 
 .const-nav a, .const-nav button {
-    padding: 1.5rem 1rem;
+    padding: 2rem 1rem;
 }
 
 .clean-list {
@@ -94,7 +94,6 @@ figure {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    font-size: .8em;
     text-align: center;
     padding: .5rem 0;
 }
