@@ -126,6 +126,10 @@ main section, .hero {
     text-align: center;
 }
 
+.hero h1 {
+    margin-top: 0;
+}
+
 .feature-section {
     margin-top: 4rem;
 }
