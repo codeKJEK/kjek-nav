@@ -4,115 +4,187 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>KJEK Navigation</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header id="top">
-      <nav class="top-nav">
-        <a href="#main-content" class="skip-cta">skip to main content</a>
-        <div class="const-nav">
-          <a href="#">company name</a>
-          <button
-            class="nav-btn"
-            aria-controls="secondary-nav"
-            aria-haspopup="true"
-          >
-            menu
-          </button>
-        </div>
-        <div class="toggled-nav">
-          <ul
-            id="secondary-nav"
-            class="clean-list secondary"
-            aria-expanded="false"
-            hidden
-          >
-            <li><a href="#">about</a></li>
-            <li><a href="#">services</a></li>
-            <li><a href="#">locations</a></li>
-            <li><a href="#">contact</a></li>
-            <li><a href="#">facebook</a></li>
-            <li><a href="#">twitter</a></li>
-            <li><a href="#">github</a></li>
-          </ul>
-        </div>
-      </nav>
-      <nav class="bottom-nav">
-        <ul class="clean-list primary">
+    <header>
+        <nav class="upper-nav">
+          <a href="#main-content" class="skip-cta">skip to main content</a>
+        <ul class="nav-header">
+          <li><a href="#" class="logo-cta">company name</a></li>
           <li>
-            <a href="#">
-              <figure>
-                <img src="https://via.placeholder.com/65" alt="" />
-                <figcaption>options</figcaption>
-              </figure>
-            </a>
-          </li>
-          <li>
-            <a href="#services">
-              <figure>
-                <img src="https://via.placeholder.com/65" alt="" />
-                <figcaption>services</figcaption>
-              </figure>
-            </a>
-          </li>
-          <li>
-            <a href="#contact">
-              <figure>
-                <img src="https://via.placeholder.com/65" alt="" />
-                <figcaption>contact</figcaption>
-              </figure>
-            </a>
+            <button
+              class="menu-btn"
+              aria-haspopup="true"
+              aria-controls="upper-list"
+            >
+              menu
+            </button>
           </li>
         </ul>
-        <ul class="clean-list primary-toggled">
+        <ul
+          id="upper-list"
+          aria-expanded="false"
+          class="nav-list toggle-list"
+          hidden
+        >
+          <li><a href="#service">services</a></li>
+          <li><a href="#contact">contact</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#">facebook</a></li>
+          <li><a href="#">twitter</a></li>
+          <li><a href="#">github</a></li>
+        </ul>
+      </nav>
+      <nav class="lower-nav">
+        <ul
+          id="lower-list-1"
+          class="options-list toggle-list"
+          aria-expanded="false"
+          hidden
+        >
           <li>
-            <a href="#top">
-              <figure>
-                <img src="https://via.placeholder.com/65" alt="" />
-                <figcaption>top</figcaption>
-              </figure>
-            </a>
+            Choose a mode:
+            <ul class="mode-list">
+              <li>
+                <input type="radio" name="mode" id="light" checked />
+                <label for="light">light mode</label>
+              </li>
+              <li>
+                <input type="radio" name="mode" id="dark" />
+                <label for="dark">dark mode</label>
+              </li>
+            </ul>
+          </li>
+          <li>
+            Choose a font size:
+            <ul class="font-list">
+              <li>
+                <input type="radio" checked name="font" id="font-normal" />
+                <label for="font-normal">default</label>
+              </li>
+              <li>
+                <input type="radio" name="font" id="font-large" />
+                <label for="font-large">18</label>
+              </li>
+              <li>
+                <input type="radio" name="font" id="font-xl" />
+                <label for="font-xl">20</label>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav-header">
+          <li>
+            <button
+              class="menu-btn"
+              aria-haspopup="true"
+              aria-controls="lower-list-1"
+            >
+              <img
+                src="https://via.placeholder.com/24"
+                alt="24x24 placehoder"
+              />
+              options
+            </button>
+          </li>
+          <li>
+            <a href="#service"
+              ><img
+                src="https://via.placeholder.com/24"
+                alt="24x24 placehoder"
+              />services</a
+            >
+          </li>
+          <li>
+            <a href="#contact"
+              ><img
+                src="https://via.placeholder.com/24"
+                alt="24x24 placehoder"
+              />contact</a
+            >
+          </li>
+          <li>
+            <a href="#service" class="next-link"
+              ><img
+                src="https://via.placeholder.com/24"
+                alt="24x24 placehoder"
+              />next</a
+            >
+            <a href="#top" class="top-link" hidden
+              ><img
+                src="https://via.placeholder.com/24"
+                alt="24x24 placehoder"
+              />top</a
+            >
           </li>
         </ul>
       </nav>
-      <section class="hero">
+      <section class="hero-section">
         <div class="content-container">
           <h1>value proposition</h1>
-          <p>Lorem ipsum dolor sit amet.</p>
-          <div class="feature-section">
-            <p>featured services</p>
-            <ul class="clean-list">
-              <li><a href="#">service one</a></li>
-              <li><a href="#">service two</a></li>
-              <li><a href="#">service three</a></li>
-            </ul>
-          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, iste?
+          </p>
+          <ul>
+            <li><a href="#service-1">service one</a></li>
+            <li><a href="#service-2">service two</a></li>
+            <li><a href="#service-3">service three</a></li>
+          </ul>
         </div>
       </section>
     </header>
     <main>
-      <section id="services">
+      <section id="service">
         <div class="content-container">
-          <h2>services</h2>
+          <h2>services section</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
-            libero nostrum eum molestiae minus vel amet, ea culpa mollitia ipsa
-            nihil dolore alias sapiente tempore.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste
+            corporis illo modi fuga eveniet facilis sed, nesciunt architecto
+            aliquam asperiores!
+          </p>
+          <h3 id="service-1">service one</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+            necessitatibus hic aut unde labore tenetur molestiae voluptates quae
+            enim facilis?
+          </p>
+          <h3 id="service-2">service two</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+            necessitatibus hic aut unde labore tenetur molestiae voluptates quae
+            enim facilis?
+          </p>
+          <h3 id="service-3">service three</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+            necessitatibus hic aut unde labore tenetur molestiae voluptates quae
+            enim facilis?
+          </p>
+        </div>
+      </section>
+      <section id="about">
+        <div class="content-container">
+          <h2>about section</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste
+            corporis illo modi fuga eveniet facilis sed, nesciunt architecto
+            aliquam asperiores!
           </p>
         </div>
       </section>
       <section id="contact">
         <div class="content-container">
-          <h2>contact</h2>
+          <h2>contact section</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
-            libero nostrum eum molestiae minus vel amet, ea culpa mollitia ipsa
-            nihil dolore alias sapiente tempore.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste
+            corporis illo modi fuga eveniet facilis sed, nesciunt architecto
+            aliquam asperiores!
           </p>
         </div>
       </section>
     </main>
+    <script src="app.js"></script>
   </body>
-  <script src="script.js"></script>
 </html>
