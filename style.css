@@ -118,6 +118,16 @@ figure {
 
 .lower-nav .nav-header {
     justify-content: space-around;
+
+}
+
+.lower-nav .nav-header li {
+    min-width: 60px;
+    text-align: center;
+}
+
+.lower-nav button {
+    width: 100%;
 }
 
 
@@ -139,7 +149,8 @@ figure {
 
 .lower-nav .nav-header img {
     display: block;
-    min-width: 24px;
+    width: 24px;
+    height: 24px;
     margin: 0 auto;
 }
 
@@ -161,6 +172,7 @@ figure {
 
 .options-list {
     text-align: center;
+    padding: 2rem 0
 }
 
 section {
