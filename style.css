@@ -77,12 +77,14 @@ figure {
 
 .upper-nav {
     top: 0;
-    background-image: linear-gradient(#f2f2f2, #d9d9d9);
+    background-image: linear-gradient(to right, #d9d9d9, #e6e6e6, #d9d9d9);
+    box-shadow: 0px 5px 5px 0px rgba(64, 64, 64, 0.1);
 }
 
 .lower-nav {
     bottom: 0;
-    background-image: linear-gradient(#d9d9d9, #f2f2f2);
+    background-image: linear-gradient(to right, #d9d9d9, #e6e6e6, #d9d9d9);
+    box-shadow: 0px -5px 5px 0px rgba(64, 64, 64, 0.1);
 }
 
 .upper-nav.dark-mode {
@@ -113,8 +115,12 @@ figure {
 }
 
 
-.lower-nav .nav-header {
-    color: #808080
+.nav-header {
+    color: #666
+}
+
+.dark-mode .nav-header {
+    color: #999;
 }
 
 .lower-nav .nav-header a, .lower-nav .nav-header button {
@@ -153,12 +159,12 @@ figure {
 
 section {
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 

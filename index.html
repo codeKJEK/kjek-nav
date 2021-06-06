@@ -10,7 +10,7 @@
   <body>
     <header>
         <nav class="upper-nav">
-          <a href="#main-content" class="skip-cta">skip to main content</a>
+          <a href="#main-content" class="skip-cta scroll-cta">skip to main content</a>
         <ul class="nav-header">
           <li><a href="#" class="logo-cta">company name</a></li>
           <li>
@@ -29,9 +29,9 @@
           class="nav-list toggle-list"
           hidden
         >
-          <li><a href="#service">services</a></li>
-          <li><a href="#contact">contact</a></li>
-          <li><a href="#about">about</a></li>
+          <li><a href="#service" class="scroll-cta">services</a></li>
+          <li><a href="#contact" class="scroll-cta">contact</a></li>
+          <li><a href="#about" class="scroll-cta">about</a></li>
           <li><a href="#">facebook</a></li>
           <li><a href="#">twitter</a></li>
           <li><a href="#">github</a></li>
@@ -48,8 +48,8 @@
             Choose a mode:
             <ul class="mode-list">
               <li>
-                <input type="radio" name="mode" id="light" checked />
-                <label for="light">light mode</label>
+                <input type="radio" name="mode" id="mode-default"/>
+                <label for="mode-default">default</label>
               </li>
               <li>
                 <input type="radio" name="mode" id="dark" />
@@ -61,8 +61,8 @@
             Choose a font size:
             <ul class="font-list">
               <li>
-                <input type="radio" checked name="font" id="font-normal" />
-                <label for="font-normal">default</label>
+                <input type="radio" name="font" id="font-default" />
+                <label for="font-defualt">default</label>
               </li>
               <li>
                 <input type="radio" name="font" id="font-large" />
@@ -90,7 +90,7 @@
             </button>
           </li>
           <li>
-            <a href="#service"
+            <a href="#service" class="scroll-cta"
               ><img
                 src="https://via.placeholder.com/24"
                 alt="24x24 placehoder"
@@ -98,7 +98,7 @@
             >
           </li>
           <li>
-            <a href="#contact"
+            <a href="#contact" class="scroll-cta"
               ><img
                 src="https://via.placeholder.com/24"
                 alt="24x24 placehoder"
@@ -106,11 +106,11 @@
             >
           </li>
           <li>
-            <a href="#service" class="next-link"
+            <a href="#service" class="next-link scroll-cta"
               ><img
                 src="https://via.placeholder.com/24"
                 alt="24x24 placehoder"
-              />next</a
+              />scroll</a
             >
             <a href="#top" class="top-link" hidden
               ><img
@@ -128,9 +128,9 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, iste?
           </p>
           <ul>
-            <li><a href="#service-1">service one</a></li>
-            <li><a href="#service-2">service two</a></li>
-            <li><a href="#service-3">service three</a></li>
+            <li><a href="#service-1" class="scroll-cta">service one</a></li>
+            <li><a href="#service-2" class="scroll-cta">service two</a></li>
+            <li><a href="#service-3" class="scroll-cta">service three</a></li>
           </ul>
         </div>
       </section>
