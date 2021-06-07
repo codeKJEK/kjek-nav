@@ -116,6 +116,10 @@ figure {
     justify-content: space-between;
 }
 
+.upper-nav .nav-list a {
+    border-bottom: 1px solid #666;
+}
+
 .lower-nav .nav-header {
     justify-content: space-around;
 
