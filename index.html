@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header id="global-header">
         <nav class="upper-nav">
-          <a href="#main-content" class="skip-cta scroll-cta">skip to main content</a>
+          <a href="#hero" class="skip-cta">skip to main content</a>
         <ul class="nav-header">
           <li><a href="#" class="logo-cta">company name</a></li>
           <li>
@@ -121,7 +121,7 @@
           </li>
         </ul>
       </nav>
-      <section class="hero-section">
+      <section id="hero" class="hero-section" tabindex="-1">
         <div class="content-container">
           <h1>value proposition</h1>
           <p>
@@ -135,7 +135,7 @@
         </div>
       </section>
     </header>
-    <main>
+    <main id="main-content" tabindex="-1">
       <section id="service">
         <div class="content-container">
           <h2>services section</h2>
@@ -145,6 +145,7 @@
             aliquam asperiores!
           </p>
           <h3 id="service-1">service one</h3>
+          <a href="#top">link</a>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
             necessitatibus hic aut unde labore tenetur molestiae voluptates quae

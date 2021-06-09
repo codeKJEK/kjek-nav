@@ -111,8 +111,8 @@ fontInputs.forEach(input => {
 
 
 const menuBtn = document.querySelectorAll(".menu-btn");
+const toggleList = document.querySelectorAll(".toggle-list");
 menuBtn.forEach(btn => {
-    const toggleList = document.querySelectorAll(".toggle-list");
     btn.addEventListener("click", (event) => {
         const ariaControls = event.currentTarget.getAttribute("aria-controls");
         const controlledAria = document.getElementById(ariaControls);
@@ -146,18 +146,22 @@ window.addEventListener("scroll", () => {
 })
 
 const scrollCta = document.querySelectorAll(".scroll-cta");
+
 scrollCta.forEach(cta => {
-    cta.addEventListener("click", (event) => {
-        event.preventDefault();
-        const id = event.currentTarget.getAttribute("href").slice(1);
-        const element = document.getElementById(id);
-        const navHeight = upperNav.getBoundingClientRect().height;
-        let position = element.offsetTop - navHeight;
-        window.scrollTo({
-            left: 0,
-            top: position
+
+        cta.addEventListener("click", (event) => {
+            event.preventDefault();
+            const id = event.currentTarget.getAttribute("href").slice(1);
+            const element = document.getElementById(id);
+            const navHeight = upperNav.getBoundingClientRect().height;
+            let position = element.offsetTop - navHeight;
+            window.scrollTo({
+                left: 0,
+                top: position
+            })
         })
-    })
+       
+    
 })
 
 // const scrollLinks = document.querySelectorAll(".scroll-link");
@@ -189,3 +193,23 @@ scrollCta.forEach(cta => {
 //     navContainer.style.height = 0;
 //   });
 // });
+
+const mainContent = document.getElementById("main-content");
+mainContent.addEventListener("click", () => {
+    toggleList.forEach(list => {
+        if(list.getAttribute("aria-expanded") == "true") {
+            list.setAttribute("aria-expanded", "false");
+            list.hidden = "true"
+        }
+    })
+})
+
+const hero = document.getElementById("hero");
+hero.addEventListener("click", () => {
+    toggleList.forEach(list => {
+        if(list.getAttribute("aria-expanded") == "true") {
+            list.setAttribute("aria-expanded", "false");
+            list.hidden = "true"
+        }
+    })
+})
