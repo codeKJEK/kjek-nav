@@ -64,12 +64,24 @@ modeInputs.forEach(input => {
 });
 
 const enableDark = () => {
+    document.querySelectorAll(".default-icon").forEach(defaultIcon => {
+        defaultIcon.hidden = true;
+    });
+    document.querySelectorAll(".dark-icon").forEach(darkIcon => {
+        darkIcon.hidden = false;
+    });
     body.classList.add("dark-mode");
     lowerNav.classList.add("dark-mode");
     upperNav.classList.add("dark-mode");
 }
 
 const disableDark = () => {
+    document.querySelectorAll(".default-icon").forEach(defaultIcon => {
+        defaultIcon.hidden = false;
+    });
+    document.querySelectorAll(".dark-icon").forEach(darkIcon => {
+        darkIcon.hidden = true;
+    });
     body.classList.remove("dark-mode");
     lowerNav.classList.remove("dark-mode");
     upperNav.classList.remove("dark-mode");
@@ -164,35 +176,7 @@ scrollCta.forEach(cta => {
     
 })
 
-// const scrollLinks = document.querySelectorAll(".scroll-link");
-// scrollLinks.forEach(function (link) {
-//   link.addEventListener("click", function (e) {
-//     e.preventDefault();
 
-//     const id = e.currentTarget.getAttribute("href").slice(1);
-//     const element = document.getElementById(id);
-
-//     const navHeight = navbar.getBoundingClientRect().height;
-//     const containerHeight = navContainer.getBoundingClientRect().height;
-//     const fixedNav = navbar.classList.contains("fixed-nav");
-//     let position = element.offsetTop - navHeight;
-    
-//     if(!fixedNav) {
-//         position = position - navHeight;
-//     }
-
-//     if (navHeight > 93) {
-//       position = position + containerHeight;
-//     }
-
-//     window.scrollTo({
-//       left: 0,
-//       top: position,
-//     });
-
-//     navContainer.style.height = 0;
-//   });
-// });
 
 const mainContent = document.getElementById("main-content");
 mainContent.addEventListener("click", () => {

@@ -9,6 +9,7 @@ html {
 }
 
 body {
+    color: #0d0d0d;
     background: #f2f2f2;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
@@ -74,29 +75,34 @@ figure {
     padding: 0;
 }
 
-
 .upper-nav, .lower-nav {
     position: fixed;
     left: 0;
     width: 100%;
+    background-image: linear-gradient(to right, #d9d9d9, #f2f2f2, #d9d9d9);
+    
 }
 
 .upper-nav {
     top: 0;
-    background-image: linear-gradient(to right, #d9d9d9, #e6e6e6, #d9d9d9);
+    border-bottom: 1px solid #d9d9d9;
 }
 
 .lower-nav {
     bottom: 0;
-    background-image: linear-gradient(to right, #d9d9d9, #e6e6e6, #d9d9d9);
+    border-top: 1px solid #d9d9d9;
+}
+
+.upper-nav.dark-mode, .lower-nav.dark-mode {
+    background-image: linear-gradient(to right, #0d0d0d, #262626, #0d0d0d);
 }
 
 .upper-nav.dark-mode {
-    background-image: linear-gradient(#0d0d0d, #1a1a1a);
+    border-bottom: 1px solid #0d0d0d;
 }
 
 .lower-nav.dark-mode {
-    background-image: linear-gradient(#1a1a1a, #0d0d0d);
+    border-top: 1px solid #0d0d0d;
 }
 
 
@@ -155,6 +161,10 @@ figure {
     height: 24px;
     margin: 0 auto 2px auto;
     
+}
+
+.lower-nav .nav-header img[hidden] {
+    display: none;
 }
 
 .lower-nav .nav-header a[hidden] {
