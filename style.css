@@ -70,7 +70,7 @@ figure {
 
 .dark-mode {
     color: var(--color-w95);
-    background-color: var(--color-w5);
+    background-color: var(--color-w15);
 }
 
 .font-large {
