@@ -9,33 +9,36 @@
   </head>
   <body>
     <header id="global-header">
-        <nav class="upper-nav">
+      <nav class="upper-nav">
           <a href="#hero" class="skip-cta">skip to main content</a>
-        <ul class="nav-header">
-          <li><a href="#" class="logo-cta">company name</a></li>
-          <li>
-            <button
-              class="menu-btn"
-              aria-haspopup="true"
-              aria-controls="upper-list"
+          <div class="flex-container">
+            <ul class="nav-header">
+              <li><a href="#" class="logo-cta">company name</a></li>
+              <li>
+                <button
+                  class="menu-btn"
+                  aria-haspopup="true"
+                  aria-controls="upper-list"
+                >
+                  menu
+                </button>
+              </li>
+            </ul>
+            <ul
+              id="upper-list"
+              aria-expanded="false"
+              class="nav-list toggle-list"
+              hidden
             >
-              menu
-            </button>
-          </li>
-        </ul>
-        <ul
-          id="upper-list"
-          aria-expanded="false"
-          class="nav-list toggle-list"
-          hidden
-        >
-          <li><a href="#service" class="scroll-cta">services</a></li>
-          <li><a href="#contact" class="scroll-cta">contact</a></li>
-          <li><a href="#about" class="scroll-cta">about</a></li>
-          <li><a href="#">facebook</a></li>
-          <li><a href="#">twitter</a></li>
-          <li><a href="#">github</a></li>
-        </ul>
+              <li><a href="#service" class="scroll-cta">services</a></li>
+              <li><a href="#contact" class="scroll-cta">contact</a></li>
+              <li><a href="#about" class="scroll-cta">about</a></li>
+              <li><a href="#">facebook</a></li>
+              <li><a href="#">twitter</a></li>
+              <li><a href="#">github</a></li>
+            </ul>
+
+          </div>
       </nav>
       <nav class="lower-nav">
         <ul
@@ -76,7 +79,7 @@
           </li>
         </ul>
         <ul class="nav-header">
-          <li>
+          <li class="options">
             <button
               class="menu-btn"
               aria-haspopup="true"
@@ -96,7 +99,7 @@
               options
             </button>
           </li>
-          <li>
+          <li class="desktop-hidden">
             <a href="#service" class="scroll-cta"
               ><img
               src="./asset/service-icon.svg"
@@ -112,7 +115,7 @@
               services</a
             >
           </li>
-          <li>
+          <li class="desktop-hidden">
             <a href="#contact" class="scroll-cta"
               ><img
                 src="./asset/phone-icon.svg"
@@ -128,7 +131,7 @@
               contact</a
             >
           </li>
-          <li>
+          <li class="top">
             <a href="#service" class="next-link scroll-cta"
               ><img
                 src="./asset/scroll-icon.svg"

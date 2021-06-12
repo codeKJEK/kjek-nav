@@ -3,17 +3,26 @@
 /* ========= */
 
 :root {
-    --color-w95: #f2f2f2;
-    --color-w90: #e6e6e6;
-    --color-w85: #d9d9d9;
-    --color-w80: #cccccc;
-    --color-w60: #999999;
-    --color-w40: #404040;
-    --color-w20: #333333;
-    --color-w15: #262626;
-    --color-w10: #1a1a1a;
-    --color-w5: #0d0d0d;
-
+    /* COLORS */
+    --clr-w95: #f2f2f2;
+    --clr-w90: #e6e6e6;
+    --clr-w85: #d9d9d9;
+    --clr-w80: #cccccc;
+    --clr-w60: #999999;
+    --clr-w40: #404040;
+    --clr-w20: #333333;
+    --clr-w15: #262626;
+    --clr-w10: #1a1a1a;
+    --clr-w5: #0d0d0d;
+    /* FONT SIZE */
+    --fs-default: 16px;
+    --fs-large: 18px;
+    --fs-xl: 20px;
+    --fs-icon: .8em;
+    /* BORDER */
+    --border-style: 1px solid var(--clr-w85);
+    /* PADDING */
+    --padding-icon: 6px 0 10px 0;
 }
 
 /* ========================= */
@@ -31,9 +40,9 @@ html {
 }
 
 body {
-    color: var(--color-w5);
-    background: var(--color-w95);
-    font-size: 16px;
+    color: var(--clr-w5);
+    background: var(--clr-w95);
+    font-size: var(--fs-default);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -69,16 +78,16 @@ figure {
 /* =============== */
 
 .dark-mode {
-    color: var(--color-w95);
-    background-color: var(--color-w15);
+    color: var(--clr-w95);
+    background-color: var(--clr-w15);
 }
 
 .font-large {
-    font-size: 18px;
+    font-size: var(--fs-large);
 }
 
 .font-xl {
-    font-size: 20px;
+    font-size: var(--fs-xl);
 }
 
 /* ====================== */
@@ -113,18 +122,18 @@ figure {
     position: fixed;
     left: 0;
     width: 100%;
-    background-image: linear-gradient(to right, var(--color-w85), var(--color-w90), var(--color-w85));
+    background-image: linear-gradient(to right, var(--clr-w85), var(--clr-w90), var(--clr-w85));
     
 }
 
 .upper-nav {
     top: 0;
-    border-bottom: 1px solid var(--color-w85);
+    border-bottom: var(--border-style);
 }
 
 .lower-nav {
     bottom: 0;
-    border-top: 1px solid var(--color-w85);
+    border-top: var(--border-style);
 }
 
 .upper-nav a, .upper-nav button {
@@ -142,16 +151,16 @@ figure {
 }
 
 .upper-nav .nav-list a {
-    border-bottom: 1px solid var(--color-w80);
+    border-bottom: 1px solid var(--clr-w80);
 }
 
 .upper-nav.dark-mode .nav-list a {
-    border-bottom: 1px solid var(--color-w20);
+    border-bottom: 1px solid var(--clr-w20);
 }
 
 .lower-nav .nav-header {
     justify-content: space-around;
-    font-size: .8em;
+    font-size: var(--fs-icon);
 }
 
 .lower-nav .nav-header li {
@@ -164,7 +173,7 @@ figure {
 }
 
 .nav-header {
-    color: var(--color-w40);
+    color: var(--clr-w40);
 }
 
 
@@ -172,13 +181,12 @@ figure {
     display: block;
     min-width: 43px;
     text-align: center;
-    padding: 6px 0 10px 0;
+    padding: var(--padding-icon);
     font-size: .9em;
 }
 
 .lower-nav .nav-header img {
     display: block;
-    width: 24px;
     height: 24px;
     margin: 0 auto 2px auto;
     
@@ -214,19 +222,19 @@ figure {
 /* ============================= */
 
 .upper-nav.dark-mode, .lower-nav.dark-mode {
-    background-image: linear-gradient(to right, var(--color-w5), var(--color-w10), var(--color-w5));
+    background-image: linear-gradient(to right, var(--clr-w5), var(--clr-w10), var(--clr-w5));
 }
 
 .upper-nav.dark-mode {
-    border-bottom: 1px solid var(--color-w5);
+    border-bottom: 1px solid var(--clr-w5);
 }
 
 .lower-nav.dark-mode {
-    border-top: 1px solid var(--color-w5);
+    border-top: 1px solid var(--clr-w5);
 }
 
 .dark-mode .nav-header {
-    color: var(--color-w60);
+    color: var(--clr-w60);
 }
 
 /* ============ */
@@ -275,3 +283,64 @@ section {
 .content-container {
     padding: 2rem;
 }
+
+@media (min-width: 900px) { 
+    .upper-nav .logo-cta {
+        padding: 1.2rem 0;
+    }
+    .upper-nav .menu-btn {
+        display: none;
+    }
+
+    #upper-list {
+        display: flex;
+    }
+
+    .flex-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .desktop-hidden {
+        display: none;
+    }
+
+
+    .lower-nav .nav-header li {
+        position: absolute;
+        bottom: 10px;
+        background-image: linear-gradient(to right, var(--clr-w85), var(--clr-w90), var(--clr-w85));
+        padding: 1rem;
+        border-radius: 3rem;
+        min-width: unset;
+    }
+
+    .lower-nav.dark-mode .nav-header li {
+        background-image: linear-gradient(to right, var(--clr-w5), var(--clr-w10), var(--clr-w5));;
+    }
+
+    .options {
+        left: .5rem;
+    }
+
+    .top {
+        right: .5rem;
+    }
+
+    .content-container, .flex-container {
+        padding: 0;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .lower-nav .nav-header a, .lower-nav .nav-header button {
+        padding: 0;
+    }
+ }
+
+ @media (min-width: 1200px) {
+    .content-container, .flex-container {
+        max-width: 1000px;
+    }
+ }
